@@ -43,6 +43,13 @@ inpur[type=button] {
 .hide {
   display: none;
 }
+.flex-all-center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.flex {display: flex;}
 
 .justify-end {
   justify-content: flex-end;
@@ -54,6 +61,9 @@ inpur[type=button] {
 
 .flex-1 {
   flex: 1;
+}
+.shadow {
+  box-shadow: 0px 0px 30px rgba(0, 0, 0, .2);
 }
 
 .white-text {

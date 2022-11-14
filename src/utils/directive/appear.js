@@ -13,7 +13,10 @@ export const appear = {
             el.style[i] = temp[i]
           }
         } else {
-          el.className = binding.value
+          let classList = binding.value.split(' ')
+          for (let i of classList) {
+            el.classList.add(i)
+          }
         }
         if (binding.addClass) {
           window.removeEventListener('scroll', binding.addClass)

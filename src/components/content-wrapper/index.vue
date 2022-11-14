@@ -26,10 +26,11 @@ h2 {
   max-width: 990px;
   height: 100%;
   margin: 0 auto;
-  border: 1px solid #efefef;
+  /* border: 1px solid #efefef; */
   border-radius: 3px;
-  box-shadow: 0px 1px 5px rgba(0, 0, 0, .2);
+  /* box-shadow: 0px 1px 5px rgba(0, 0, 0, .2); */
   padding: 8px 10px 30px;
+  background-color: #fff;
 }
 </style>
 <style>

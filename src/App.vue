@@ -1,8 +1,7 @@
 <script setup>
 import ContentWrapper from '@/components/content-wrapper/index.vue'
 import { reactive, ref } from 'vue';
-import { isInViewPort } from '@/utils/utils'
-
+import CV from '@/assets/cv/cv.docx'
 const navList = reactive(['About', 'Skills', 'EXPERIENCE', 'CONTACT'])
 
 const skills = reactive([
@@ -23,7 +22,6 @@ const onPageScroll = (event) => {
 
 const scrollToView = (id) => {
   const el = document.getElementById(id)
-  console.log(id, el)
   el.scrollIntoView()
 }
 
@@ -62,7 +60,7 @@ const scrollToView = (id) => {
           <p>欢迎您，祝你生活愉快！</p>
         </div>
         <div class="downloads">
-          <button class="download"><a href="src/assets/cv/cv.docx" download="前端工程师_蔡焕城.docx">Download CV</a></button>
+          <button class="download"><a :href="CV" download="前端工程师_蔡焕城.docx">Download CV</a></button>
         </div>
       </div>
     </header>

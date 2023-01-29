@@ -4,7 +4,6 @@ export const appear = {
       el.style.opacity = 0
       const { top } = el.getBoundingClientRect()
       const h = document.documentElement.clientHeight || document.body.clientHeight
-      console.log(el)
       if (top < h) {
         el.style.opacity = 1
         if (binding.value.type === 'style') {
@@ -46,7 +45,6 @@ export const appear = {
   unbind(el, binding) {
     if (binding.addClass) {
       window.removeEventListener('scroll', binding.addClass)
-      console.log('取消事件绑定')
     }
   }
 }

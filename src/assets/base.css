@@ -9,6 +9,8 @@
 
 :root {
   /* font-size: 12px; */
+  --animate-duration: 1500ms;
+  
 }
 
 * {

@@ -239,11 +239,13 @@ nav a:hover {
   border-bottom: 1px solid #fff;
   /* background-color: rgba(0, 0, 0, .1); */
 }
+
 footer {
   font-size: 12px;
   text-align: center;
   padding: 2em;
 }
+
 #toggler:checked~.navbar-collapse {
   transform: translateX(0);
 }

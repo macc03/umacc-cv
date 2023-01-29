@@ -1,11 +1,12 @@
 export const appear = {
   mounted(el, binding) {
     binding.addClass = () => {
+      el.style.opacity = 0
       const { top } = el.getBoundingClientRect()
       const h = document.documentElement.clientHeight || document.body.clientHeight
-
-
-      if (top < h - 50) {
+      console.log(el)
+      if (top < h) {
+        el.style.opacity = 1
         if (binding.value.type === 'style') {
           let temp = binding.value
           for (let i in temp) {

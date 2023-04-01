@@ -82,11 +82,11 @@ const scrollToView = (id) => {
               <h3>Basic Information(基本信息)</h3>
               <div>
                 <span class="field">AGE:</span>
-                <span>19</span>
+                <span>20</span>
               </div>
               <div>
                 <span class="field">Address:</span>
-                <span>深圳市罗湖区黄贝岭</span>
+                <span>深圳市罗湖区</span>
               </div>
               <div>
                 <span class="field">Phone:</span>
@@ -121,7 +121,7 @@ const scrollToView = (id) => {
             <div class="left flex-all-center">
               <div v-appear="'animate__animated animate__fadeInLeft'">
                 <p class="work_time">2021.10 - 2022.7</p>
-                <p class="company_name">深圳市德特科技有限公司</p>
+                <p class="company_name">德特工作室</p>
               </div>
             </div>
             <div v-appear="'animate__animated animate__fadeInRight'" class="right">
@@ -129,13 +129,13 @@ const scrollToView = (id) => {
               <p class="info">
                 应用技术：Vue、Vue-router、Vuex、Axios、Echarts、Vue-i18n、Element UI......
               </p>
-              <p class="info">负责开发PC端管理系统，包括客户端登录注册、各类申请、审核、表格导入导出、打印等等。</p>
+              <p class="info">负责开发PC端后台管理系统，包括客户端登录注册、各类申请、审核、表格导入导出、打印等等。以及后期维护。</p>
             </div>
           </div>
           <div class="experience shadow" v-appear="'animate__animated animate__slideInUp'">
             <div class="left flex-all-center">
               <div v-appear="'animate__animated animate__fadeInLeft'">
-                <p class="work_time">2022.8 - Now</p>
+                <p class="work_time">2022.8 - 2022.10</p>
                 <p class="company_name">深圳市小河狸科技有限公司</p>
               </div>
             </div>
@@ -144,6 +144,18 @@ const scrollToView = (id) => {
               <p>应用技术：Vue、React Native、Vue-router、Element UI...</p>
               <p class="info">负责小河狸产品的开发、维护。包括小程序、App、PC端</p>
               <p class="info">已上线：河狸建筑(小程序)、<a href="https://xm.helii.cn">PC前台</a></p>
+            </div>
+          </div>
+          <div class="experience shadow" v-appear="'animate__animated animate__slideInUp'">
+            <div class="left flex-all-center">
+              <div v-appear="'animate__animated animate__fadeInLeft'">
+                <p class="work_time">2023.2 - Now</p>
+                <p class="company_name">深圳市人力资源和社会保障局数据管理中心</p>
+              </div>
+            </div>
+            <div v-appear="'animate__animated animate__fadeInRight'" class="right">
+              <p class="professional">运维工程师</p>
+              <p class="info">主要是解答用户疑问，以及协助工程师修复系统问题</p>
             </div>
           </div>
         </ContentWrapper>
@@ -432,7 +444,8 @@ h4 {
   position: relative;
   height: 10px;
   background-color: #009688;
-  transition: width .5s ease-out;
+  transition: width .8s ease-out;
+  transition-delay: 1s;
 }
 
 .progress::before {
@@ -565,6 +578,9 @@ button[type=submit] {
     width: 35%;
     min-height: 150px;
   }
+  .experience .right {
+    max-width: 52%;
+  }
 }
 
 @media screen and (max-width: 990px) {
@@ -578,6 +594,7 @@ button[type=submit] {
     transform: translateX(100%);
     display: block;
   }
+
 
   .container {
     margin: 0 1em;
